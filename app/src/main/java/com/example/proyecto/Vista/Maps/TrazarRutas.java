@@ -1,4 +1,4 @@
-package com.example.proyecto.Maps;
+package com.example.proyecto.Vista.Maps;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 
 
-import com.example.proyecto.Modelo.ListaPunto;
 import com.example.proyecto.Modelo.Punto;
 import com.example.proyecto.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -30,9 +29,9 @@ public class TrazarRutas extends AppCompatActivity implements OnMapReadyCallback
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         //Total 5
 
-        ListaPunto miListaPunto = ListaPunto.getMiListaPunto();
+        //ListaPunto miListaPunto = ListaPunto.getMiListaPunto();
 
-        puntos = miListaPunto.getListaPunto();
+        //puntos = miListaPunto.getListaPunto();
 
 
         super.onCreate(savedInstanceState);

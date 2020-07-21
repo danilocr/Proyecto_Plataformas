@@ -6,6 +6,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,8 +18,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Maps.TrazarRutas"></activity>
-        <activity android:name=".Maps.MapActivity" />
+        <activity android:name=".Vista.HistorialActivity"></activity>
+        <activity android:name=".Controller.Trasarlinea" />
+        <activity android:name=".Vista.Maps.TrazarRutas" />
+        <activity android:name=".Vista.Maps.MapActivity" />
 
         <service
             android:name=".Service.ActivityService"
