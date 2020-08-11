@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162376380231",
+    "firebase_url": "https://nuevasplataformas-3aa96.firebaseio.com",
+    "project_id": "nuevasplataformas-3aa96",
+    "storage_bucket": "nuevasplataformas-3aa96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162376380231:android:3088cd65b1a4dd69ade662",
+        "android_client_info": {
+          "package_name": "com.example.proyecto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162376380231-5258a9n12gish0es3j3lds8ojkec7bla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK9ou13ZdeuPhwsIHl1M1Gz3DuDSYBeGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162376380231-5258a9n12gish0es3j3lds8ojkec7bla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

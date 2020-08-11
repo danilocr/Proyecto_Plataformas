@@ -1,22 +1,19 @@
-package com.example.proyecto.Maps;
+package com.example.proyecto.recursosProyecto;
 
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationProvider;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.proyecto.FragmentMaps;
-import com.example.proyecto.MainActivity;
+import com.example.proyecto.Controller.MapActivity;
 import com.example.proyecto.R;
 
 public class Localizacion implements LocationListener {
     MapActivity mapActivity;
-    TextView tvMensaje;
 
     public MapActivity getMainActivity(){
         return  mapActivity;
@@ -28,9 +25,6 @@ public class Localizacion implements LocationListener {
 
     @Override
     public void onLocationChanged(Location location) {
-        String texto = "Mi ubicacion es: \n"
-                + "Latitud = " + location.getLatitude()+"\n"
-                + "Longitud = " + location.getLongitude();
         mapa(location.getLatitude(), location.getLongitude());
     }
 
@@ -65,11 +59,11 @@ public class Localizacion implements LocationListener {
 
     @Override
     public void onProviderEnabled(String provider) {
-        tvMensaje.setText("GPS activado");
+
     }
 
     @Override
     public void onProviderDisabled(String provider) {
-        tvMensaje.setText("GPS desactivado");
+
     }
 }

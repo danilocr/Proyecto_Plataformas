@@ -1,22 +1,25 @@
 package com.example.proyecto.Modelo;
 
 public class Punto {
-    private Double latitud;
-    private Double longitud;
+    private Double Latitude;
+    private Double Longitude;
 
-    public Punto (String latitud, String longitud) {
-        this.latitud = Double.parseDouble(latitud);
-        this.longitud = Double.parseDouble(longitud);
+    public Punto(){
+
+    }
+    public Punto (String latitude, String longitude) {
+        this.Latitude = Double.parseDouble(latitude);
+        this.Longitude = Double.parseDouble(longitude);
     }
 
-    public Double getLatitud(){
-        return latitud;
+    public Double getLatitude(){
+        return Latitude;
     }
-    public void setLatitud(String latitud) { this.latitud = Double.parseDouble(latitud);}
+    public void setLatitude(String latitude) { this.Latitude = Double.parseDouble(latitude);}
 
-    public Double getLongitud(){
-        return longitud;
+    public Double getLongitude(){
+        return Longitude;
     }
-    public void setLongitud(String longitud){ this.longitud = Double.parseDouble(longitud);}
+    public void setLongitude(String longitude){ this.Longitude = Double.parseDouble(longitude);}
 
 }
